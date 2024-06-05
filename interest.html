@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/new.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="achievment.html">ACHIEVMENT</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="friends.html">FRIEND</a></li>
+                    <li><a href="interest.html">PERSONAL INTEREST</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>My Personal Interest</h1>
+</section>
+
+<!----------- personal interst page ------>
+
+<section class="interest">
+    <h1>Here Is My Personal Interest</h1>
+    <p>Here is what I am interested in which is car sports and drifting or more specifically the automotive field. In other word it also my dream to achieve it one day</p>
+
+    <p>Music sountrack</p>
+    <audio controls autoplay loop>
+        <source src="audio/Marcelo_D2_Claudia_-_Desabafo_Deixa_Eu_Dizer_(Hydr0.org).mp3">
+    </audio>
+
+    <div class="row-in">
+        <div class="interest-item">
+            <img src="video/Drift Cars GIF - Drift Cars Auto - Discover & Share GIFs.gif" alt="Drift Cars">
+        </div>
+        <div class="interest-item">
+            <img src="video/Drift Porsche GIF by Type7 - Find & Share on GIPHY.gif" alt="Drift Porsche">
+        </div>
+        <div class="interest-item">
+            <img src="video/Jdm Car GIF - Jdm Car Japanese - Discover & Share GIFs.gif" alt="JDM Car">
+        </div>
+    </div>
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<!-- --- Footer -------->
+
+<section class="footer">
+    <H4>© 2024 MYLO, Inc. All Rights Reserved.</H4>
+    <p>Made By Mohamad Shameer Iskandar (2022687438)</p>
+</section>
+
+</body>
+</html>

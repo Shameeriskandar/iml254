@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/new.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="achievment.html">ACHIEVMENT</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="friends.html">FRIEND</a></li>
+                    <li><a href="interest.html">PERSONAL INTEREST</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Me</h1>
+</section>
+
+<!--------- about me content -------->
+
+<section class="about-me">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>Hi Friends and Greeting To You</h1>
+            <p>Hi friend my name is Mohamad Shameer Iskandar or you also can call me Mylo, I am currently studying at Universiti Teknologi Mara. I am now 20 years old and am currently studying for a diploma certificate in the field of Library Informatics. A little bit about me, I like to play video games with my friends, among the video games I play are PUBG mobile, Mobile Legends and also Valorant. Besides playing video games I also like to play sports with my friends, among the things I like to play and have played are badminton, rugby and also floorballs. not only that, I have also worked part-time in the fnb branch that is Tealive as a cashier and water maker, not to mention that I have also been a financial manager at the fradoo abc store located in shah alam, section 2. In addition, I have had work experience at the lazada factory or warehouse. I have also been one of the professional players in Axis esports and Veltra esports.</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+    </div class="about-col">
+        <video controls src="video/about me vid.mp4" width="500">
+    </div>
+</div>
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<!-- --- Footer -------->
+
+<section class="footer">
+    <H4>© 2024 MYLO, Inc. All Rights Reserved.</H4>
+    <p>Made By Mohamad Shameer Iskandar (2022687438)</p>
+</section>
+
+</body>
+</html>

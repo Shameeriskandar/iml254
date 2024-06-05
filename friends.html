@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/new.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="achievment.html">ACHIEVMENT</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="friends.html">FRIEND</a></li>
+                    <li><a href="interest.html">PERSONAL INTEREST</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>My Friends</h1>
+</section>
+
+<!--------- Friends -------->
+
+<section class="friends">
+    <h1>My Friends</h1>
+    <p>This is my friend at UITM since I was in the first semester until now. they are friends who are there when I am in difficult and happy situations.</p>
+
+    <div class="row">
+        <div class="friends-col">
+            <img src="images/zee.jpeg">
+            <h3>Muhammad Ziyadatulah Bin Kamalis</h3>
+            <p>Ziyad is my first friend when I first time came in kedah.</p>
+        </div>
+        <div class="friends-col">
+            <img src="images/2.jpeg">
+            <h3>Muhammad Firas Shami Bin Samsuil Fuad</h3>
+            <p>Firas also my classmate and friend at kedah.</p>
+        </div>
+        <div class="friends-col">
+            <img src="images/WhatsApp Image 2024-06-04 at 4.00.40 AM.jpeg">
+            <h3>Muhammad Anas</h3>
+            <p>Anas is my housemates also my closed friend in kedah.</p>
+        </div>
+    </div>
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+<!-- --- Footer -------->
+
+<section class="footer">
+    <H4>© 2024 MYLO, Inc. All Rights Reserved.</H4>
+    <p>Made By Mohamad Shameer Iskandar (2022687438)</p>
+</section>
+
+</body>
+</html>

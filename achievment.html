@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/new.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="achievment.html">ACHIEVMENT</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="friends.html">FRIEND</a></li>
+                    <li><a href="interest.html">PERSONAL INTEREST</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>My Achievment</h1>
+</section>
+
+<!----------- achievment page ------>
+
+<section class="achievment-content">
+
+    <div class="row">
+        <div class="achievment-left">
+            <img src="images/WhatsApp Image 2024-06-03 at 5.42.41 AM.jpeg">
+            <h2>Thing That I Achieve This Past Few Year</h2>
+            <p>Every human has achieved something in his life including me. during my life I have achieved many things. It doesn't matter whether it's in the real world or the game world, what's important is that we have a strong mentality, strive to achieve something and always pray to our creator, Allah swt.</p>
+            <br>
+            <p>In the sports event I once got second place when participating in the floorballs tournament at mssd level together with my teammates. besides that, I also got second place in the mssd level rugby event with my teammates, we also managed to bring back the sport of rugby in our school after it was thrown out before our batch arrived.</p>
+            <br>
+            <p>While in esports I managed to become the champion in the game Naruto Shippuden 4 in a small tournament. I also got second place when I was in the semi finals in the Pubg Mobile game in the PMCO Malaysia tournament or also known as the Pubg Mobile Club Open with a difference of 1 score with the first place going to the finals and the champion will represent Malaysia.</p>
+            <br>
+            <p>Effort is the main key in achieving something especially to achieve our dreams. if we just pretend and don't take any action then it will just be a dream.</p>
+        </div>
+        <div class="achievment-right">
+            <h3>List Of Achievment</h3>
+            <div>
+                <span>UPSR certificate</span>
+                <span>2016</span>
+            </div>
+            <div>
+                <span>Naruto tournament champion</span>
+                <span>2018</span>
+            </div>
+            <div>
+                <span>First runner up Floorballs</span>
+                <span>2018</span>
+            </div>
+            <div>
+                <span>First runner up Rugby</span>
+                <span>2020-2021</span>
+            </div>
+            <div>
+                <span>Semi Finalist Pubg PMCO</span>
+                <span>2021</span>
+            </div>
+            <div>
+                <span>SPM certificate</span>
+                <span>2021</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<!-- --- Footer -------->
+
+<section class="footer">
+    <H4>© 2024 MYLO, Inc. All Rights Reserved.</H4>
+    <p>Made By Mohamad Shameer Iskandar (2022687438)</p>
+</section>
+
+</body>
+</html>

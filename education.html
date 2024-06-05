@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/new.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="achievment.html">ACHIEVMENT</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="friends.html">FRIEND</a></li>
+                    <li><a href="interest.html">PERSONAL INTEREST</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>My Education</h1>
+</section>
+
+<!--------- Education -------->
+
+<section class="education">
+    <h1>Where I Study</h1>
+    <p>This is the place where I currently study and used to study to achieve my study certificate.</p>
+
+    <div class="row">
+        <div class="education-col">
+            <img src="images/uitm.jfif">
+            <h3>UITM Cawangan Kedah</h3>
+            <p>This is where I currently study at to achieve my Diploma certificate.</p>
+        </div>
+        <div class="education-col">
+            <img src="images/sekolah.jfif">
+            <h3>SMK Seksyen 9 Shah Alam</h3>
+            <p>This is where I used to study at, during my high school to achieve my SPM certificate.</p>
+        </div>
+        <div class="education-col">
+            <img src="images/skba.jfif">
+            <h3>SK Bandar Anggerik Seksyen 6 Shah Alam</h3>
+            <p>This is where I used to study during my primary school to achieve my UPSR certificate.</p>
+        </div>
+    </div>
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+<!-- --- Footer -------->
+
+<section class="footer">
+    <H4>© 2024 MYLO, Inc. All Rights Reserved.</H4>
+    <p>Made By Mohamad Shameer Iskandar (2022687438)</p>
+</section>
+
+</body>
+</html>

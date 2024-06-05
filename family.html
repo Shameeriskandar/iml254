@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+
+</style>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/new.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="achievment.html">ACHIEVMENT</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="friends.html">FRIEND</a></li>
+                    <li><a href="interest.html">PERSONAL INTEREST</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>My Family</h1>
+</section>
+
+<!----------- family page ------>
+
+<section class="family-content">
+    <div class="container">
+        <div class="wrapper">
+            <img src="images/family.jpeg">
+            <img src="images/boy.jpeg">
+            <img src="images/fam1.jpeg">
+            <img src="images/ddy.jpeg">
+            <img src="images/mom.jpeg">
+            <img src="images/brother.jpeg">
+            <img src="images/sister.jpeg">
+        </div>
+    </div>
+</section>
+
+<!------ About ------->
+
+<section class="members">
+    <h1>Family Member</h1>
+    <p>The first member of course my father, his name was Zakaria Bin Yusoff.</p>
+    <p>Then my Mother NorHaza Binti Hamid</p>
+    <p>After that my brother Hairiefudin Bin Zakaria</p>
+    <p>Then my sister Norfatin Liana Binti Zakaria</p>
+    <p>Im the youngest in my family Mohamad Shameer Iskandar Bin Zakaria</p>
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<!-- --- Footer -------->
+
+<section class="footer">
+    <H4>© 2024 MYLO, Inc. All Rights Reserved.</H4>
+    <p>Made By Mohamad Shameer Iskandar (2022687438)</p>
+</section>
+
+</body>
+</html>
